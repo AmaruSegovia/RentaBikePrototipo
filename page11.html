@@ -91,7 +91,14 @@
 <div class="dragArea row">
     <div class="col-12 form-group mb-3" data-for="horas">
         <label for="horas-form5-1u">Cantidad de Horas (hasta 6)</label>
-        <input type="number" name="horas" placeholder="Ingrese la cantidad de horas" data-form-field="horas" class="form-control" id="horas-form5-1u" min="1" max="6" required>
+        <select name="horas" data-form-field="horas" class="form-control" id="horas-form5-1u" required>
+            <option value="1">1 hora</option>
+            <option value="2">2 horas</option>
+            <option value="3">3 horas</option>
+            <option value="4">4 horas</option>
+            <option value="5">5 horas</option>
+            <option value="6">6 horas</option>
+        </select>
     </div>
     <div class="col-md col-sm-12 form-group mb-3" data-for="name">
         <label for="name-form5-1u">Nombre (Como figura en la tarjeta)</label>
@@ -99,15 +106,17 @@
     </div>
     <div class="col-md col-sm-12 form-group mb-3" data-for="email">
         <label for="email-form5-1u">Fecha de Caducidad</label>
-        <input type="text" name="email" placeholder="Ingrese la fecha de caducidad" data-form-field="email" class="form-control" id="email-form5-1u" required>
+        <input type="date" name="email" data-form-field="email" class="form-control" id="email-form5-1u" required>
     </div>
     <div class="col-12 form-group mb-3" data-for="url">
         <label for="url-form5-1u">Numero de Tarjeta</label>
-        <input type="text" name="url" placeholder="Ingrese el número de tarjeta" data-form-field="url" class="form-control" id="url-form5-1u" required>
+        <input type="tel" name="url" placeholder="Ingrese el número de tarjeta" data-form-field="url" class="form-control" pattern="[0-9]{16}" id="url-form5-1u" required>
+        <small>Ingresa los 16 dígitos de tu tarjeta.</small>
     </div>
     <div class="col-12 form-group mb-3" data-for="textarea">
         <label for="textarea-form5-1u">Codigo de Seguridad</label>
-        <textarea name="textarea" placeholder="Ingrese el código de seguridad" data-form-field="textarea" class="form-control" id="textarea-form5-1u" required></textarea>
+        <input type="tel" name="textarea" placeholder="Ingrese el código de seguridad" data-form-field="textarea" class="form-control" pattern="[0-9]{3,4}" id="textarea-form5-1u" required>
+        <small>Ingresa el código de seguridad de 3 o 4 dígitos.</small>
     </div>
     <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
         <button type="submit" class="btn btn-primary display-4">
