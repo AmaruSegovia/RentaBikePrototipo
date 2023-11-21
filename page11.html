@@ -90,20 +90,24 @@
                     </div>
 <div class="dragArea row">
     <div class="col-12 form-group mb-3" data-for="horas">
-        <!-- Cambiado de <textarea> a <input type="number"> -->
-        <input type="number" name="horas" placeholder="Cantidad de Horas (hasta 6)" data-form-field="horas" class="form-control" id="horas-form5-1u" min="1" max="6">
+        <label for="horas-form5-1u">Cantidad de Horas (hasta 6)</label>
+        <input type="number" name="horas" placeholder="Ingrese la cantidad de horas" data-form-field="horas" class="form-control" id="horas-form5-1u" min="1" max="6" required>
     </div>
     <div class="col-md col-sm-12 form-group mb-3" data-for="name">
-        <input type="text" name="name" placeholder="Nombre (Como figura en la tarjeta)" data-form-field="name" class="form-control" value="" id="name-form5-1u">
+        <label for="name-form5-1u">Nombre (Como figura en la tarjeta)</label>
+        <input type="text" name="name" placeholder="Ingrese su nombre" data-form-field="name" class="form-control" id="name-form5-1u" required>
     </div>
     <div class="col-md col-sm-12 form-group mb-3" data-for="email">
-        <input type="email" name="email" placeholder="Fecha de Caducidad" data-form-field="email" class="form-control" value="" id="email-form5-1u">
+        <label for="email-form5-1u">Fecha de Caducidad</label>
+        <input type="text" name="email" placeholder="Ingrese la fecha de caducidad" data-form-field="email" class="form-control" id="email-form5-1u" required>
     </div>
     <div class="col-12 form-group mb-3" data-for="url">
-        <input type="url" name="url" placeholder="Numero de Tarjeta" data-form-field="url" class="form-control" value="" id="url-form5-1u">
+        <label for="url-form5-1u">Numero de Tarjeta</label>
+        <input type="text" name="url" placeholder="Ingrese el número de tarjeta" data-form-field="url" class="form-control" id="url-form5-1u" required>
     </div>
     <div class="col-12 form-group mb-3" data-for="textarea">
-        <textarea name="textarea" placeholder="Codigo de Seguridad " data-form-field="textarea" class="form-control" id="textarea-form5-1u"></textarea>
+        <label for="textarea-form5-1u">Codigo de Seguridad</label>
+        <textarea name="textarea" placeholder="Ingrese el código de seguridad" data-form-field="textarea" class="form-control" id="textarea-form5-1u" required></textarea>
     </div>
     <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
         <button type="submit" class="btn btn-primary display-4">
